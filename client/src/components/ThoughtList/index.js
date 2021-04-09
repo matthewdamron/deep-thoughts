@@ -16,10 +16,11 @@ const ThoughtList = ({ thoughts, title }) => {
               <Link
                 to={`/profile/${thought.username}`}
                 style={{ fontWeight: 700 }}
-                className='text-light'
+                className="text-light"
               >
                 {thought.username}
-              </Link>
+              </Link>{' '}
+              thought on {thought.createdAt}
             </p>
             <div className="card-body">
               <Link to={`/thought/${thought._id}`}>
